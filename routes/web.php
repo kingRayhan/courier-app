@@ -5,6 +5,7 @@ use App\Http\Controllers\ParcelController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\TrackerController;
 use App\Http\Controllers\ZoneController;
+use App\Http\Livewire\ParcelEditor;
 use Illuminate\Support\Facades\Route;
 
 
@@ -23,6 +24,7 @@ Route::group([
      */
     Route::view('/', 'dashboard')->name('dashboard');
     Route::resource('parcels', ParcelController::class);
+    Route::get('new-parcel', ParcelEditor::class)->name('new-parcel');
     Route::resource('shops', ShopController::class);
 
 
