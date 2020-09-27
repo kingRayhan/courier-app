@@ -14,23 +14,23 @@ class ParcelController extends Controller
      */
     public function index()
     {
-        //
+        return "Hello";
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view('parcels.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +41,7 @@ class ParcelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Parcel  $parcel
+     * @param \App\Models\Parcel $parcel
      * @return \Illuminate\Http\Response
      */
     public function show(Parcel $parcel)
@@ -52,7 +52,7 @@ class ParcelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Parcel  $parcel
+     * @param \App\Models\Parcel $parcel
      * @return \Illuminate\Http\Response
      */
     public function edit(Parcel $parcel)
@@ -63,8 +63,8 @@ class ParcelController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Parcel  $parcel
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Parcel $parcel
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Parcel $parcel)
@@ -75,7 +75,7 @@ class ParcelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Parcel  $parcel
+     * @param \App\Models\Parcel $parcel
      * @return \Illuminate\Http\Response
      */
     public function destroy(Parcel $parcel)

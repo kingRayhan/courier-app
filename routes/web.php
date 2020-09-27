@@ -24,7 +24,6 @@ Route::group([
      */
     Route::view('/', 'dashboard')->name('dashboard');
     Route::resource('parcels', ParcelController::class);
-    Route::get('new-parcel', ParcelEditor::class)->name('new-parcel');
     Route::resource('shops', ShopController::class);
 
 

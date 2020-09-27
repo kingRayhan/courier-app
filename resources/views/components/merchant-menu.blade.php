@@ -1,4 +1,4 @@
-<a href="{{route('new-parcel')}}" class="button is-fullwidth is-danger">
+<a href="{{ route('parcels.create') }}" class="button is-fullwidth is-danger">
     <i class="fa fa-plus mr-2"></i>
     <span>নতুন পার্সেল</span>
 </a>
