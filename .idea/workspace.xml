@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,15 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11088c93-763b-4a0d-8554-982f93bbaa44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Parcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Parcel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/Navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/Navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +179,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/areas" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -182,16 +188,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/areas" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/components" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/areas" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,6 +220,13 @@
       <workItem from="1601114860124" duration="648000" />
       <workItem from="1601139208533" duration="11645000" />
       <workItem from="1601172473488" duration="3756000" />
+      <workItem from="1602152559463" duration="1509000" />
+      <workItem from="1602165838054" duration="4527000" />
+      <workItem from="1602176847903" duration="1066000" />
+      <workItem from="1602177945084" duration="86000" />
+      <workItem from="1602178046695" duration="786000" />
+      <workItem from="1602178842612" duration="1188000" />
+      <workItem from="1602180041607" duration="6414000" />
     </task>
     <servers />
   </component>
@@ -230,6 +243,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="773" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1601178120773">
@@ -248,13 +262,55 @@
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="762" y="455" key="NewPhpFileDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1601093463827" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1601109302258">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor" timestamp="1602180117137">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602180117137" />
     <state x="461" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1601109302258" />
-    <state x="623" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1601176277799">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="453" y="254" key="run.anything.popup" timestamp="1602178285314">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="453" y="254" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602178285314" />
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602182399525">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602182399525" />
     <state x="623" y="243" width="672" height="678" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1601176277799" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/components/navbar.blade.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

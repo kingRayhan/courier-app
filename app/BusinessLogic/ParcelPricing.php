@@ -2,7 +2,6 @@
 
 namespace App\BusinessLogic;
 
-
 class ParcelPricing
 {
     private $weight;

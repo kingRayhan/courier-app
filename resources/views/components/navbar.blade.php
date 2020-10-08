@@ -9,7 +9,6 @@
     <div class="navbar-menu">
         <div class="navbar-end">
             @auth()
-
                 <form action="{{route('logout')}}" id="logout" method="POSt"> @csrf </form>
 
                 <div class="navbar-item has-dropdown is-hoverable">

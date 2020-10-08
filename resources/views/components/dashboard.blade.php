@@ -1,6 +1,8 @@
 @props(['headerHook' => '' , 'footerHook' => ''])
 <x-app-layout>
 
+
+
     <x-slot name="headerHook">
         {{$headerHook}}
     </x-slot>
