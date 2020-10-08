@@ -23,17 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11088c93-763b-4a0d-8554-982f93bbaa44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Parcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Parcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/Navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/Navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +216,7 @@
       <workItem from="1602177945084" duration="86000" />
       <workItem from="1602178046695" duration="786000" />
       <workItem from="1602178842612" duration="1188000" />
-      <workItem from="1602180041607" duration="6414000" />
+      <workItem from="1602180041607" duration="6740000" />
     </task>
     <servers />
   </component>
@@ -271,10 +261,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="453" y="254" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602178285314" />
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602182399525">
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602187193379">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602182399525" />
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602187193379" />
     <state x="623" y="243" width="672" height="678" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1601176277799" />
   </component>
   <component name="XDebuggerManager">
