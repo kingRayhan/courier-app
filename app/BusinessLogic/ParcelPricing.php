@@ -6,6 +6,7 @@ class ParcelPricing
 {
     private $weight;
     private $price;
+    private $cod_percentage;
 
     /**
      * ParcelPricing constructor.
@@ -16,10 +17,12 @@ class ParcelPricing
     {
         $this->weight = $weight;
         $this->price = $price;
+
+        $this->cod_percentage = env('COD_PERCENTAGE');
     }
 
 
-    public function getCost()
+    public function getDeliveryCost()
     {
         if ($this->weight == 1) {
             $charge = 60;
@@ -28,4 +31,21 @@ class ParcelPricing
         }
         return $charge;
     }
+
+
+    public function getCodCharge()
+    {
+        return ($this->price * $this->cod_percentage) / 100;
+    }
+
+    public function getMerchantPaybackAmount()
+    {
+        return ($this->getDeliveryCost() + $this->price) - ($this->getDeliveryCost() + $this->getCodCharge());
+    }
+
+    public function getTotalBill()
+    {
+        return $this->getDeliveryCost() + $this->price;
+    }
+
 }

@@ -18,7 +18,7 @@
             <li>
                 <a
                     class="false"
-                    href="/dashboard/parcels">
+                    href="{{route('parcels.index')}}">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     পার্সেল সমূহ
                 </a>
@@ -34,7 +34,7 @@
             <li>
                 <a
                     class="false"
-                    href="/dashboard/payments"><i class="fa fa-usd" aria-hidden="true"></i>
+                    href="{{route('earnings')}}"><i class="fa fa-usd" aria-hidden="true"></i>
                     উপার্জন
                 </a>
             </li>

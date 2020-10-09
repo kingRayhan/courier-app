@@ -23,7 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11088c93-763b-4a0d-8554-982f93bbaa44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_client-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_status-updater.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_status.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Parcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Parcel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tracker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tracker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parcels/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +206,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -216,7 +244,10 @@
       <workItem from="1602177945084" duration="86000" />
       <workItem from="1602178046695" duration="786000" />
       <workItem from="1602178842612" duration="1188000" />
-      <workItem from="1602180041607" duration="6740000" />
+      <workItem from="1602180041607" duration="8954000" />
+      <workItem from="1602218133374" duration="14658000" />
+      <workItem from="1602245326497" duration="6793000" />
+      <workItem from="1602263064105" duration="15422000" />
     </task>
     <servers />
   </component>
@@ -248,23 +279,34 @@
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="629" y="258" key="NewPhpClassDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1601177915092" />
-    <state x="762" y="455" key="NewPhpFileDialog" timestamp="1601093463827">
-      <screen x="0" y="23" width="1920" height="1004" />
+    <state x="762" y="465" key="NewPhpFileDialog" timestamp="1602257364295">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="762" y="465" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602257364295" />
     <state x="762" y="455" key="NewPhpFileDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1601093463827" />
-    <state x="335" y="155" width="998" height="713" key="SettingsEditor" timestamp="1602180117137">
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor" timestamp="1602279211645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602180117137" />
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602279211645" />
+    <state x="363" y="243" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602218659694" />
     <state x="461" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1601109302258" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1602188768387">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1602188768387" />
+    <state x="77" y="87" width="1563" height="1088" key="dock-window-1" timestamp="1602223324818">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="77" y="87" width="1563" height="1088" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1602223324818" />
     <state x="453" y="254" key="run.anything.popup" timestamp="1602178285314">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="453" y="254" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602178285314" />
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602187193379">
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602278909506">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602187193379" />
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602278909506" />
+    <state x="623" y="237" width="672" height="731" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602257895512" />
     <state x="623" y="243" width="672" height="678" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1601176277799" />
   </component>
   <component name="XDebuggerManager">

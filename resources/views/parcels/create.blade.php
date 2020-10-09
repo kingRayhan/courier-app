@@ -1,3 +1,3 @@
 <x-dashboard>
-    @livewire('parcel-editor')
+    <livewire:parcel-editor/>
 </x-dashboard>

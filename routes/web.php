@@ -25,7 +25,9 @@ Route::group([
     Route::view('/', 'dashboard')->name('dashboard');
     Route::resource('parcels', ParcelController::class);
     Route::resource('shops', ShopController::class);
-
+    Route::get('/earnings', function () {
+        return view('earnings.index');
+    })->name('earnings');
 
     /**
      * -----------------------

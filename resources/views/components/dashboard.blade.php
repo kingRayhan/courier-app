@@ -1,14 +1,15 @@
-@props(['headerHook' => '' , 'footerHook' => ''])
+@props(['headerHook' => '' , 'footerHook' => '', 'pageTitle' => ''])
 <x-app-layout>
-
-
-
     <x-slot name="headerHook">
         {{$headerHook}}
     </x-slot>
 
     <x-slot name="footerHook">
         {{$footerHook}}
+    </x-slot>
+
+    <x-slot name="pageTitle">
+        {{$pageTitle}}
     </x-slot>
 
     <div class="container is-fluid my-5">

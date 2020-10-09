@@ -139,8 +139,8 @@
                                 </div>
                             </div>
                             <div class="level mb-0">
-                                <div class="level-left">COD চার্জ (1%)</div>
-                                <div class="level-right">{{$parcel_price * .01}}&nbsp;টাকা</div>
+                                <div class="level-left">COD চার্জ ({{ env('COD_PERCENTAGE') }}%)</div>
+                                <div class="level-right">{{$cod_charge}}&nbsp;টাকা</div>
                             </div>
                             <div class="level mb-1">
                                 <div class="level-left">ডেলিভারি ফি</div>
@@ -150,7 +150,7 @@
                             <div class="level">
                                 <div class="level-left">আপনি পাবেন</div>
                                 <div class="level-right">
-                                    {{ ($delivery_charge + $parcel_price) - ($delivery_charge + ($parcel_price * .01) )  }}
+                                    {{ $merchant_payback_amount }}
                                     &nbspটাকা
                                 </div>
                             </div>
@@ -158,7 +158,13 @@
                         <div class="field mt-4">
                             <button
                                 wire:click="submit"
-                                class="button is-danger is-fullwidth">অর্ডার করুন
+                                class="button is-danger is-fullwidth">
+                                @if($is_editing)
+                                    সেভ করুন
+                                @else
+                                    অর্ডার করুন
+                                @endif
+
                             </button>
                         </div>
                     </div>

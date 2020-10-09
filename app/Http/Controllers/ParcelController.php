@@ -14,7 +14,30 @@ class ParcelController extends Controller
      */
     public function index()
     {
-        return "Hello";
+        $fallbackStatus = [
+            "",
+            "placed",
+            "picked",
+            "shipping",
+            "delivered",
+            "cancelled",
+            "returned",
+        ];
+
+        $status = request()->query('status') ? [request()->query('status')] : $fallbackStatus;
+
+        if (auth()->user()->is_admin) {
+            $parcels = Parcel::query()->whereIn('status', $status)
+                ->orderBy('created_at', 'desc')
+                ->paginate(10);
+        } else {
+            $parcels = auth()->user()->parcels()
+                ->whereIn('status', $status)
+                ->orderBy('created_at', 'desc')
+                ->paginate(10);
+        }
+
+        return view('parcels.index', compact('parcels', 'status'));
     }
 
     /**
@@ -46,7 +69,7 @@ class ParcelController extends Controller
      */
     public function show(Parcel $parcel)
     {
-        //
+        return view('parcels.show', compact('parcel'));
     }
 
     /**
@@ -57,7 +80,7 @@ class ParcelController extends Controller
      */
     public function edit(Parcel $parcel)
     {
-        //
+        return view('parcels.edit', compact('parcel'));
     }
 
     /**
@@ -69,7 +92,12 @@ class ParcelController extends Controller
      */
     public function update(Request $request, Parcel $parcel)
     {
-        //
+        $parcel->update([
+            'status' => $request->status,
+            'cod_collected' => $request->cod_collected,
+        ]);
+
+        return redirect()->back();
     }
 
     /**
@@ -80,6 +108,7 @@ class ParcelController extends Controller
      */
     public function destroy(Parcel $parcel)
     {
-        //
+        $parcel->delete();
+        return back();
     }
 }
