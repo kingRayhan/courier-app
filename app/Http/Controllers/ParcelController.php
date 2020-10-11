@@ -27,11 +27,26 @@ class ParcelController extends Controller
         $status = request()->query('status') ? [request()->query('status')] : $fallbackStatus;
 
         if (auth()->user()->is_admin) {
-            $parcels = Parcel::query()->whereIn('status', $status)
+            $parcels = Parcel::query()
+                ->orderByRaw("
+                CASE
+                    WHEN status='placed' THEN 1
+                    WHEN status='picked' THEN 2
+                    WHEN status='shipping' THEN 3
+                ELSE 4 END
+                ")
                 ->orderBy('created_at', 'desc')
+                ->whereIn('status', $status)
                 ->paginate(10);
         } else {
             $parcels = auth()->user()->parcels()
+                ->orderByRaw("
+                CASE
+                    WHEN status='placed' THEN 1
+                    WHEN status='picked' THEN 2
+                    WHEN status='shipping' THEN 3
+                ELSE 4 END
+                ")
                 ->whereIn('status', $status)
                 ->orderBy('created_at', 'desc')
                 ->paginate(10);
@@ -112,3 +127,21 @@ class ParcelController extends Controller
         return back();
     }
 }
+
+
+/**
+ * Admin
+ * ----------------------------
+ * Order placed
+ * Order Amount this month
+ * Last 5 orders
+ */
+
+/**
+ * Merchant
+ * -----------------------------
+ * Order placed by him
+ * In shipping
+ * IN
+ * Last 5 orders
+ */

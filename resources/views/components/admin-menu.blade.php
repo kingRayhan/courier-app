@@ -5,19 +5,26 @@
     <ul class="menu-list">
         <li>
             <a
-                class="{{ request()->is('areas.index') ? 'is-active' : '' }}"
+                class="{{ request()->routeIs('dashboard') ? 'is-active' : '' }}"
+                href="{{ route('dashboard') }}">
+                ড্যাসবোর্ড
+            </a>
+        </li>
+        <li>
+            <a
+                class="{{ request()->routeIs('parcels.index') ? 'is-active' : '' }}"
                 href="{{ route('parcels.index') }}">
                 পার্সেল অর্ডার
             </a>
         </li>
         <li>
             <a
-                class="{{ request()->is('zones.index') ? 'is-active' : '' }}"
+                class="{{ request()->routeIs('zones.index') ? 'is-active' : '' }}"
                 href="{{ route('zones.index') }}">জোনসমূহ</a>
         </li>
         <li>
             <a
-                class="{{ request()->is('areas.index') ? 'is-active' : '' }}"
+                class="{{ request()->routeIs('areas.index') ? 'is-active' : '' }}"
                 href="{{ route('areas.index') }}">এরিয়াসমূহ</a>
         </li>
     </ul>

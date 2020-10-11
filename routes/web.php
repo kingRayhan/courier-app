@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AreaController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ParcelController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\TrackerController;
@@ -22,7 +23,7 @@ Route::group([
      *      Merchant
      * -----------------------
      */
-    Route::view('/', 'dashboard')->name('dashboard');
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('parcels', ParcelController::class);
     Route::resource('shops', ShopController::class);
     Route::get('/earnings', function () {

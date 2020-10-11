@@ -8,7 +8,7 @@
         <ul>
             <li>
                 <a
-                    class="false"
+                    class="{{request()->routeIs('dashboard') ? 'is-active' : ''}}"
                     href="{{route('dashboard')}}">
                     <i class="fa fa-tachometer" aria-hidden="true"></i>
                     ড্যাসবোর্ড
@@ -17,7 +17,7 @@
 
             <li>
                 <a
-                    class="false"
+                    class="{{request()->routeIs('parcels.index') ? 'is-active' : ''}}"
                     href="{{route('parcels.index')}}">
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                     পার্সেল সমূহ
@@ -25,7 +25,7 @@
             </li>
             <li>
                 <a
-                    class="false"
+                    class="{{request()->routeIs('shops.index') ? 'is-active' : ''}}"
                     href="{{route('shops.index')}}"><i class="fa fa-home" aria-hidden="true"></i>
                     দোকান সমূহ
                 </a>
@@ -33,7 +33,7 @@
 
             <li>
                 <a
-                    class="false"
+                    class="{{request()->routeIs('earnings') ? 'is-active' : ''}}"
                     href="{{route('earnings')}}"><i class="fa fa-usd" aria-hidden="true"></i>
                     উপার্জন
                 </a>
@@ -41,7 +41,7 @@
 
             <li>
                 <a
-                    class="false"
+                    class="{{request()->routeIs('profile.show') ? 'is-active' : ''}}"
                     href="{{route('profile.show')}}"><i class="fa fa-cog" aria-hidden="true"></i>
                     সেটিংস
                 </a>

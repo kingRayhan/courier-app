@@ -38,6 +38,7 @@ class CreateParcelsTable extends Migration
             $table->unsignedBigInteger("user_id")->index();
             $table->unsignedBigInteger("shop_id")->index();
 
+
             $table->foreign("user_id")
                 ->references("id")
                 ->on('users')

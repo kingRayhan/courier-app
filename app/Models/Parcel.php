@@ -13,39 +13,47 @@ class Parcel extends Model
 
     protected $guarded = [];
 
-    protected function area()
+    public function area()
     {
         return $this->belongsTo(Area::class);
     }
 
-    protected function zone()
+    public function zone()
     {
         return $this->belongsTo(Zone::class);
     }
 
-    protected function shop()
+    public function shop()
     {
         return $this->belongsTo(Shop::class);
     }
 
-    protected function user()
+    public function owner()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function tracker()
+    {
+        return $this->hasMany(Tracker::class, 'tracking_id', 'tracking_id');
     }
 
     public static function boot()
     {
         parent::boot();
 
-        self::saving(function ($parcel) {
+        self::creating(function ($parcel) {
             $parcel->tracking_id = strtoupper(Str::random(6));
             $pricing = new ParcelPricing($parcel->weight, $parcel->parcel_price);
             $parcel->merchant_payback_amount = $pricing->getMerchantPaybackAmount();
         });
+
+        self::created(function ($parcel) {
+            $parcel->tracker()->create([
+                'status_message' => 'পার্সেল প্লেস করা হয়েছে!'
+            ]);
+        });
     }
 
-    protected function trackings()
-    {
-        return $this->hasMany(Tracker::class, 'tracking_id', 'tracking_id');
-    }
+
 }

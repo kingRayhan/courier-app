@@ -5,11 +5,11 @@
     <div class="card-content">
         <div class="level">
             <div class="level-left">নাম:</div>
-            <div class="level-right">{{ $parcel->user->name }}</div>
+            <div class="level-right">{{ $parcel->owner->name }}</div>
         </div>
         <div class="level">
             <div class="level-left">ইমেইল:</div>
-            <div class="level-right">{{ $parcel->user->email }}</div>
+            <div class="level-right">{{ $parcel->owner->email }}</div>
         </div>
 
         <h3 class=" text-xl mb-1">দোকান</h3>

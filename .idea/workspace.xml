@@ -23,34 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11088c93-763b-4a0d-8554-982f93bbaa44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_client-info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_status-updater.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_status.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-merchant.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/courier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/courier.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/CodCharge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BusinessLogic/ParcelPricing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/ParcelEditor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Earning.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Earning.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TrackingMessege.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TrackingMessege.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Parcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Parcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tracker.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tracker.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_062204_create_parcels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_062204_create_parcels_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/parcel-editor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parcels/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tracking-messege.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tracking-messege.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,6 +177,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
       <path value="$PROJECT_DIR$/vendor/realrashid/sweet-alert" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
     </include_path>
   </component>
   <component name="ProjectId" id="1i21wn6ZBt0iNw5yhleTseVlsIe" />
@@ -198,7 +190,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/areas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cart/backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -247,7 +239,10 @@
       <workItem from="1602180041607" duration="8954000" />
       <workItem from="1602218133374" duration="14658000" />
       <workItem from="1602245326497" duration="6793000" />
-      <workItem from="1602263064105" duration="15422000" />
+      <workItem from="1602263064105" duration="16377000" />
+      <workItem from="1602311358595" duration="9156000" />
+      <workItem from="1602335563801" duration="4299000" />
+      <workItem from="1602346355776" duration="6349000" />
     </task>
     <servers />
   </component>
@@ -275,6 +270,10 @@
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state x="698" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1601146659755" />
+    <state x="581" y="238" key="FileChooserDialogImpl" timestamp="1602359281867">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="581" y="238" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1602359281867" />
     <state x="629" y="258" key="NewPhpClassDialog" timestamp="1601177915092">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
@@ -284,10 +283,10 @@
     </state>
     <state x="762" y="465" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602257364295" />
     <state x="762" y="455" key="NewPhpFileDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1601093463827" />
-    <state x="335" y="155" width="998" height="713" key="SettingsEditor" timestamp="1602279211645">
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor" timestamp="1602318757212">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602279211645" />
+    <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602318757212" />
     <state x="363" y="243" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602218659694" />
     <state x="461" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1601109302258" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1602188768387">
@@ -302,10 +301,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="453" y="254" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602178285314" />
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602278909506">
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602351662969">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602278909506" />
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602351662969" />
     <state x="623" y="237" width="672" height="731" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602257895512" />
     <state x="623" y="243" width="672" height="678" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1601176277799" />
   </component>
