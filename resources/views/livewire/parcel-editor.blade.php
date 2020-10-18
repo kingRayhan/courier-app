@@ -91,6 +91,9 @@
                                                 <option value="{{$shop->id}}">{{$shop->name}}</option>
                                             @endforeach
                                         </select>
+                                        @error('shop_id')
+                                        <p class="help is-danger">{{$message}}</p>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="field">
