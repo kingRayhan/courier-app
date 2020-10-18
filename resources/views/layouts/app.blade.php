@@ -1,6 +1,4 @@
 @props(['headerHook' => '' , 'footerHook' => ''])
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -22,23 +20,25 @@
     @livewireStyles
     @include('sweetalert::alert')
 
-<!-- Scripts -->
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.js" defer></script>
 
     {{ $headerHook  }}
 </head>
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
-        @livewire('navigation-dropdown')
-        <x-navbar/>
+<div class="min-h-screen bg-gray-100">
+    @livewire('navigation-dropdown')
+    <x-navbar/>
 
-        <!-- Page Content -->
-        <main>
-            {{ $slot }}
-        </main>
-    </div>
-    @stack('modals')
-    @livewireScripts
-    {{ $footerHook  }}
+    <!-- Page Content -->
+    <main>
+        {{ $slot }}
+    </main>
+</div>
+
+@include('_partials._footer')
+@stack('modals')
+@livewireScripts
+{{ $footerHook  }}
 </body>
 </html>

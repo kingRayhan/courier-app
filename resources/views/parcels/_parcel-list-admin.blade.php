@@ -17,7 +17,8 @@
     <tbody>
     @foreach($parcels as $parcel)
         <tr>
-            <td>{{$parcel->tracking_id}}</td>
+            <td><a href="{{route('tracker' , ['tracking_code' => $parcel->tracking_id])}}">{{$parcel->tracking_id}}</a>
+            </td>
             <td>{{$parcel->owner->name}}</td>
             <td>
                 {{$parcel->customer_name}}

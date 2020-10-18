@@ -11,8 +11,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.home');
+})->name('home');
+
+Route::get('/tracker', [TrackerController::class, 'tracker'])->name('tracker');
 
 Route::group([
     'prefix' => 'dashboard',

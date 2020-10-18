@@ -23,26 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11088c93-763b-4a0d-8554-982f93bbaa44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-merchant.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/courier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/courier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/_partials/_coverage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/_partials/_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/_partials/_hero.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/_partials/_promo-section.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tracker/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ParcelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Earning.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Earning.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TrackingMessege.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TrackingMessege.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Parcel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Parcel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_26_062204_create_parcels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_26_062204_create_parcels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/merchant-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tracking-messege.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tracking-messege.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/_merchant-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TrackerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TrackerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-merchant.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/_parcel-list-merchant.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/parcels/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/src/Dumper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/src/Dumper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/carbon" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/carbon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/commonmark" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/commonmark" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/psysh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/psysh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/var-dump-server" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/var-dump-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fideloper/proxy/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fideloper/proxy/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/league/commonmark/bin/commonmark" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/league/commonmark/bin/commonmark" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/livewire/livewire/squishy" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/livewire/livewire/squishy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nesbot/carbon/bin/carbon" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nesbot/carbon/bin/carbon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nikic/php-parser/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nikic/php-parser/bin/php-parse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nunomaduro/collision/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/nunomaduro/collision/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/build-phar.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/paragonie/random_compat/build-phar.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psy/psysh/bin/psysh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/psy/psysh/bin/psysh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/bin/var-dump-server" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/bin/var-dump-server" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,6 +257,7 @@
       <workItem from="1602311358595" duration="9156000" />
       <workItem from="1602335563801" duration="4299000" />
       <workItem from="1602346355776" duration="6349000" />
+      <workItem from="1603013710374" duration="3209000" />
     </task>
     <servers />
   </component>
@@ -289,10 +304,10 @@
     <state x="335" y="155" width="998" height="713" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602318757212" />
     <state x="363" y="243" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1602218659694" />
     <state x="461" y="164" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1601109302258" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1602188768387">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1603016356472">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1602188768387" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1603016356472" />
     <state x="77" y="87" width="1563" height="1088" key="dock-window-1" timestamp="1602223324818">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -301,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="453" y="254" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602178285314" />
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1602351662969">
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup" timestamp="1603016419251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602351662969" />
+    <state x="623" y="230" width="672" height="710" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603016419251" />
     <state x="623" y="237" width="672" height="731" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602257895512" />
     <state x="623" y="243" width="672" height="678" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1601176277799" />
   </component>

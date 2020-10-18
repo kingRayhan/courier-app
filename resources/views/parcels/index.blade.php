@@ -22,8 +22,9 @@
                     </div>
                 </form>
             </div>
-            <a class="button is-danger is-small mr-2" href="{{route('parcels.create')}}">আর্কাইভ</a>
-            <a class="button is-danger is-small" href="{{route('parcels.create')}}">নতুন পার্সেল</a>
+            @if(!auth()->user()->is_admin)
+                <a class="button is-danger is-small" href="{{route('parcels.create')}}">নতুন পার্সেল</a>
+            @endif
         </div>
     </div>
 
